@@ -109,11 +109,13 @@
       <div class="latest-transfers">
         <table class="top-players">
           <tr>
+              {% for transfer in transfers %}
             <td>1. Mbappe</td>
             <td>{{transfer.old_club}}</td>
             <td>{{transfer.new_club}}</td>
             <td>180</td>
             <td>17/18</td>
+              {% endfor %}
           </tr>
         </table>
         <hr>
